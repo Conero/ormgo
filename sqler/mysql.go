@@ -79,6 +79,11 @@ func (c *MysqlCreator) OrWhere(cond string) Creator {
 	return c
 }
 
+func (c *MysqlCreator) Page(page, size int) Creator{
+	// @TODO 分页实现
+	return c
+}
+
 // 数据处理--------->
 
 // 字段解析

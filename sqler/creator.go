@@ -22,6 +22,9 @@ type Creator interface {
 	Where(cond string) Creator
 	OrWhere(cond string) Creator
 
+	Page(page, size int) Creator
+
+
 	Select() string
 	Count(fields ...string) string
 }
