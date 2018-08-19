@@ -5,7 +5,8 @@ package ormgo
 // @Name:    项目主文件
 
 const (
-	Version = "0.0.1"
-	Release = "20180818"
+	Version = "0.0.2"
+	Release = "20180819"
 	Author  = "Joshua Conero"
+	Since   = "20180818"
 )

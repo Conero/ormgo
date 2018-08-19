@@ -6,6 +6,15 @@
 
 
 
+### 0.02/20180819
+
+> sqler
+
+- (优化) *Creator* 添加方法 *Group*/*Order* 接口
+- (优化) *MysqlCreator*
+  - 内部变量更改为 *_name* 开头 
+  - (实现) 实现 *Group*/*Order*/*Page* 解析等方法
+
 ### 0.0.1/20180818
 
 > sqler

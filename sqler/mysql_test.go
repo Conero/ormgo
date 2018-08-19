@@ -27,6 +27,9 @@ func TestMysqlCreator_Where(t *testing.T) {
 		Field("us.name", "us.gender", "rs.text", "cp.name").
 		Join("resume", "rs", "us.uid=rs.uid").
 		LeftJoin("company", "cp", "rs.resume_id=cp.resume_id").
+		Order("us.name", "us.gender desc", "cp.name desc").
+		Group("us.name", "us.gender", "rs.text", "cp.name").
+		Page(1, 50).
 		Select()
 	fmt.Println(sql)
 }

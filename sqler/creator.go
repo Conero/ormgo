@@ -24,7 +24,8 @@ type Creator interface {
 
 	Page(page, size int) Creator
 
-
+	Group(fields ...string) Creator
+	Order(fields ...string) Creator
 	Select() string
 	Count(fields ...string) string
 }
